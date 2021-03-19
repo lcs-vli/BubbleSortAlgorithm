@@ -13,32 +13,34 @@ func waitForInput() {
     _ = readLine()
 }
 
+
+// populate already sorted array
+//dataSet.append(1)
+//dataSet.append(2)
+//dataSet.append(3)
+//dataSet.append(4)
+//dataSet.append(5)
+//dataSet.append(6)
+//dataSet.append(7)
+//dataSet.append(8)
+//dataSet.append(9)
+//dataSet.append(10)
+
 //creat an empty array
 var dataSet: [Int] = []
 var sortedNum = 0
 
-
 //populate the array
-//for _ in 1...10 {
-//    dataSet.append(Int.random(in: 1...100))
-//}
-// populate already sorted array
-dataSet.append(1)
-dataSet.append(2)
-dataSet.append(3)
-dataSet.append(4)
-dataSet.append(5)
-dataSet.append(6)
-dataSet.append(7)
-dataSet.append(8)
-dataSet.append(9)
-dataSet.append(10)
+for _ in 1...10 {
+    dataSet.append(Int.random(in: 1...100))
+}
+
 print(dataSet)
 
 //sort the array
 while sortedNum < dataSet.count - 1{
     
-    var ifNotSorted = 0
+    var sorted = true
     
     for j in 0...dataSet.count - sortedNum - 2 {
         
@@ -47,12 +49,12 @@ while sortedNum < dataSet.count - 1{
             let temporaryValue = dataSet[j]
             dataSet[j] = dataSet[j+1]
             dataSet[j+1] = temporaryValue
-            ifNotSorted += 1
+            sorted = false
         }
 
     }
     
-    if ifNotSorted == 0 {
+    if sorted == true {
         //print the sorted array
         print("Sorted:")
         print(dataSet)
