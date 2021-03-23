@@ -23,10 +23,11 @@ var target = Int(readLine()!)!
 
 var min = 0
 var max = dataSet.count - 1
-var mid = Int((min + max) / 2)
 var times = 1
 
 while max >= min {
+    
+    let mid = Int((min + max) / 2)
     
     if target == dataSet[mid]{
         print("The number is the \(mid + 1) number in the list. It is found after \(times) runs.")
@@ -39,9 +40,10 @@ while max >= min {
         max = mid - 1
     }
     
-    print(dataSet[min])
-    print(dataSet[max])
     times += 1
+    
 }
 
-
+if max <= min {
+    print("OOPS! the number does not exist in the list. Sorry!")
+}
