@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		541FB65A26051FFA00A3B417 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FB65926051FFA00A3B417 /* main.swift */; };
+		54DA9500260A1D86002CF995 /* sharedFunctinos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA94FF260A1D86002CF995 /* sharedFunctinos.swift */; };
+		54DA9535260A29AC002CF995 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA9534260A29AC002CF995 /* main.swift */; };
+		54DA953B260A29CE002CF995 /* sharedFunctinos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA94FF260A1D86002CF995 /* sharedFunctinos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		541FB65426051FFA00A3B417 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		54DA9530260A29AC002CF995 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +37,20 @@
 /* Begin PBXFileReference section */
 		541FB65626051FFA00A3B417 /* BubbleSortAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BubbleSortAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		541FB65926051FFA00A3B417 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		54DA94FF260A1D86002CF995 /* sharedFunctinos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharedFunctinos.swift; sourceTree = "<group>"; };
+		54DA9532260A29AC002CF995 /* BinarySortALgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySortALgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DA9534260A29AC002CF995 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		541FB65326051FFA00A3B417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DA952F260A29AC002CF995 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +63,9 @@
 		541FB64D26051FFA00A3B417 = {
 			isa = PBXGroup;
 			children = (
+				54DA94FF260A1D86002CF995 /* sharedFunctinos.swift */,
 				541FB65826051FFA00A3B417 /* BubbleSortAlgorithm */,
+				54DA9533260A29AC002CF995 /* BinarySortALgorithms */,
 				541FB65726051FFA00A3B417 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				541FB65626051FFA00A3B417 /* BubbleSortAlgorithm */,
+				54DA9532260A29AC002CF995 /* BinarySortALgorithms */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +85,14 @@
 				541FB65926051FFA00A3B417 /* main.swift */,
 			);
 			path = BubbleSortAlgorithm;
+			sourceTree = "<group>";
+		};
+		54DA9533260A29AC002CF995 /* BinarySortALgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				54DA9534260A29AC002CF995 /* main.swift */,
+			);
+			path = BinarySortALgorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +115,23 @@
 			productReference = 541FB65626051FFA00A3B417 /* BubbleSortAlgorithm */;
 			productType = "com.apple.product-type.tool";
 		};
+		54DA9531260A29AC002CF995 /* BinarySortALgorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DA9536260A29AC002CF995 /* Build configuration list for PBXNativeTarget "BinarySortALgorithms" */;
+			buildPhases = (
+				54DA952E260A29AC002CF995 /* Sources */,
+				54DA952F260A29AC002CF995 /* Frameworks */,
+				54DA9530260A29AC002CF995 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinarySortALgorithms;
+			productName = BinarySortALgorithms;
+			productReference = 54DA9532260A29AC002CF995 /* BinarySortALgorithms */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +142,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					541FB65526051FFA00A3B417 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					54DA9531260A29AC002CF995 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -110,6 +163,7 @@
 			projectRoot = "";
 			targets = (
 				541FB65526051FFA00A3B417 /* BubbleSortAlgorithm */,
+				54DA9531260A29AC002CF995 /* BinarySortALgorithms */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DA9500260A1D86002CF995 /* sharedFunctinos.swift in Sources */,
 				541FB65A26051FFA00A3B417 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DA952E260A29AC002CF995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DA953B260A29CE002CF995 /* sharedFunctinos.swift in Sources */,
+				54DA9535260A29AC002CF995 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +327,28 @@
 			};
 			name = Release;
 		};
+		54DA9537260A29AC002CF995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38A74XPH8R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		54DA9538260A29AC002CF995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38A74XPH8R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +366,15 @@
 			buildConfigurations = (
 				541FB65E26051FFA00A3B417 /* Debug */,
 				541FB65F26051FFA00A3B417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DA9536260A29AC002CF995 /* Build configuration list for PBXNativeTarget "BinarySortALgorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DA9537260A29AC002CF995 /* Debug */,
+				54DA9538260A29AC002CF995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
