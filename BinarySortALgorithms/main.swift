@@ -25,12 +25,31 @@ var min = 0
 var max = dataSet.count - 1
 var times = 1
 
+    
 while max >= min {
+    
+    print("")
+    print("Start is: \t\t\(min)")
+    print("Middle is: \t\t\(max)")
+    print("End is: \t\t\(max)")
+    print("Target value: \t\(target)")
+    print("------")
+    print("Index:\t", terminator: "")
+    for i in min...max {
+        print("\(i)\t", terminator: "")
+    }
+    print("")
+    print("Values: ", terminator: "")
+    for i in min...max {
+        print("\(dataSet[i])\t", terminator: "")
+    }
+    print("")
+    waitForInput()
     
     let mid = Int((min + max) / 2)
     
     if target == dataSet[mid]{
-        print("The number is the \(mid + 1) number in the list. It is found after \(times) runs.")
+        print("The number is in the \(mid + 1) place in the list. It is found after \(times) runs.")
         break
     }
     else if target > dataSet[mid] {
@@ -42,8 +61,10 @@ while max >= min {
     
     times += 1
     
+    print("== Target not found ==")
+    
 }
 
 if max <= min {
-    print("OOPS! the number does not exist in the list. Sorry!")
+    print("OOPS! The value is not in the array. Sorry!")
 }
